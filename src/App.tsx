@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useAppDispatch } from './store/store';
+import { getProduct } from './features/products/productSlice';
 
 function App() {
+  const dispatch = useAppDispatch();
+
+  const initialFetch = useCallback(async () => {
+    await dispatch(getProduct());
+  }, [dispatch]);
+
+  useEffect(() => {
+    initialFetch();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
