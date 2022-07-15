@@ -20,7 +20,7 @@ export const getProduct = createAsyncThunk<IProduct>(
         '/stackline_frontend_assessment_data_2021.json'
       );
 
-      console.log(response);
+      console.log(response.data);
       return response.data;
     } catch (error) {
       console.error(`ERR:: ${error}`);
