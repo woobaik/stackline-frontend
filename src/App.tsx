@@ -1,8 +1,12 @@
 import React, { useCallback, useEffect } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import { useAppDispatch } from './store/store';
 import { getProduct } from './features/products/productSlice';
+import { Layout } from 'antd';
+import NavBar from './components/NavBar';
+import ProductPage from './components/ProductPage/ProductPage';
+const { Content, Footer } = Layout;
 
 function App() {
   const dispatch = useAppDispatch();
@@ -13,25 +17,21 @@ function App() {
 
   useEffect(() => {
     initialFetch();
-  }, []);
+  }, [initialFetch]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <NavBar />
+      <Content
+        className="site-layout"
+        style={{ padding: '0 50px', marginTop: 64 }}
+      >
+        <ProductPage />
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>
+        Joungwoo Baik @2022 Created for Stackline
+      </Footer>
+    </Layout>
   );
 }
 

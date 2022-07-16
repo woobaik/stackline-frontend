@@ -20,8 +20,7 @@ export const getProduct = createAsyncThunk<IProduct>(
         '/stackline_frontend_assessment_data_2021.json'
       );
 
-      console.log(response.data);
-      return response.data;
+      return response.data[0];
     } catch (error) {
       console.error(`ERR:: ${error}`);
       return thunkAPI.rejectWithValue(error);
