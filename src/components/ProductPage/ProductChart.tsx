@@ -44,13 +44,11 @@ const ProductChart = () => {
   };
 
   return product?.sales ? (
-    <Card>
+    <Card style={{ marginLeft: '10px' }}>
       <DualAxes {...config} data={[product.sales, product.sales]} />
     </Card>
   ) : (
-    <div>
-      <Spinner />
-    </div>
+    <Spinner />
   );
 };
 

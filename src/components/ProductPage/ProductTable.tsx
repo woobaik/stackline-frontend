@@ -1,4 +1,4 @@
-import { Table } from 'antd';
+import { Card, Table } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { useAppSelector } from '../../store/store';
 
@@ -63,12 +63,14 @@ const ProductTable = () => {
   const { product, loading } = useAppSelector((state) => state.product);
 
   return (
-    <Table
-      columns={columns}
-      dataSource={product?.sales}
-      loading={loading}
-      rowKey={`weekEnding`}
-    />
+    <Card style={{ marginLeft: '10px' }}>
+      <Table
+        columns={columns}
+        dataSource={product?.sales}
+        loading={loading}
+        rowKey={`weekEnding`}
+      />
+    </Card>
   );
 };
 

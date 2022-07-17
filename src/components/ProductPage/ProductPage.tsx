@@ -11,12 +11,13 @@ export default function ProductPage() {
   return loading ? (
     <Spinner />
   ) : (
-    <Row>
+    <Row style={{ marginTop: '15px' }}>
       <Col span={5}>
         <ProductLeftCard />
       </Col>
       <Col span={19}>
         <ProductChart />
+        <br />
         <ProductTable />
       </Col>
     </Row>
