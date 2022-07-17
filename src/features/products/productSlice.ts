@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { IProduct } from '../../interfaces/Product';
 
+// since we are using async function, I added loading property for future use
 interface ProductState {
   loading: boolean;
   product: IProduct | undefined;

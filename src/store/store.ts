@@ -1,6 +1,6 @@
+// followed redux toolkit practice
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-
 import ProductReducer from '../features/products/productSlice';
 
 export const store = configureStore({

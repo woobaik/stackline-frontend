@@ -10,6 +10,7 @@ interface DataType {
   wholesaleSales: number;
 }
 
+// the provided data type is string, but I belive dateParser will work since its a date. we can always change it to new Date() function.
 const dateParser = (str: any): number => {
   return str.split('-').join('');
 };
@@ -18,9 +19,6 @@ const columns: ColumnsType<DataType> = [
   {
     title: 'Week Ending',
     dataIndex: 'weekEnding',
-
-    // specify the condition of filtering result
-    // here is that finding the name started with `value`
     defaultSortOrder: 'ascend',
     sorter: (a, b) => {
       return dateParser(a.weekEnding) - dateParser(b.weekEnding);
@@ -30,31 +28,26 @@ const columns: ColumnsType<DataType> = [
   {
     title: 'RETAIL SALES',
     dataIndex: 'retailSales',
-
     sorter: (a, b) => a.retailSales - b.retailSales,
   },
   {
     title: 'WHOLESALE SALES',
     dataIndex: 'wholesaleSales',
-
     sorter: (a, b) => a.wholesaleSales - b.wholesaleSales,
   },
   {
     title: 'UNIT SOLD',
     dataIndex: 'wholesaleSales',
-
     sorter: (a, b) => a.wholesaleSales - b.wholesaleSales,
   },
   {
     title: 'UNITS SOLD',
     dataIndex: 'unitsSold',
-
     sorter: (a, b) => a.unitsSold - b.unitsSold,
   },
   {
     title: 'RETAILER MARGIN',
     dataIndex: 'retailerMargin',
-
     sorter: (a, b) => a.retailerMargin - b.retailerMargin,
   },
 ];
@@ -68,6 +61,7 @@ const ProductTable = () => {
         columns={columns}
         dataSource={product?.sales}
         loading={loading}
+        // The given data didn't have a key or Id, so I assumed weekEnding data is unique.
         rowKey={`weekEnding`}
       />
     </Card>
