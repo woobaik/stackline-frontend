@@ -24,6 +24,7 @@ const ProductLeftCard = () => {
           {product?.tags.map((tag, index) => {
             return (
               <Button
+                size="small"
                 style={{ marginLeft: '10px', marginBottom: '10px' }}
                 key={tag + index}
               >

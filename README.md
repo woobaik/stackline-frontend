@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Stackline Assessment Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Stackline GitHub repository: [https://github.com/woobaik/stackline-frontend](https://github.com/woobaik/stackline-frontend) :flashlight:
 
-## Available Scripts
+#### Live web page (hosted on GitHub Pages): [https://woobaik.github.io/stackline-frontend](https://woobaik.github.io/stackline-frontend)
 
-In the project directory, you can run:
+By [:email: Joungwoo Baik](mailto:joungwoo.baik@gmail.com)
 
-### `npm start`
+## Installation Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Follow these instructions to get a development environment up and running.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Clone the repository
 
-### `npm test`
+```
+git clone https://github.com/woobaik/stackline-frontend.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies
 
-### `npm run build`
+```
+npm i
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run the app in development mode
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Requirements
 
-### `npm run eject`
+### Resources to get started (attached via email):
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1.  A JSON file to be used as the data source to populate the web page
+2.  A wire mockup of what your final web page should look like
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### We are looking for:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1.  A solution that resembles the provided mock up closely and implements AT LEAST ONE of either the graph or chart as seen in the mock up.
+2.  A working solution that takes the provided JSON file as output from a stubbed-out API call
+3.  A solution that implements React and Redux best practices and patterns
+4.  Clean code
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Assets to be returned via email within the provided time frame:
 
-## Learn More
+1.  A [public repository](https://github.com/woobaik/stackline-frontend) to view the final code
+2.  A [public URL](https://woobaik.github.io/stackline-frontend/) to view the web page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Typescript](https://create-react-app.dev/docs/adding-typescript/)
+- [Ant Design](https://ant.design/docs/react/introduce)
+- [Ant Design Charts](https://charts.ant.design/en/examples/gallery)
+- [React Helmet](https://github.com/nfl/react-helmet#readme)
+- HTML
+- CSS
+
+## Thank You
+
+Thank you for taking your valuable time to review my code and considering me for joining the team at Stackline! I had a lot of fun building this project,
+
+I really look forward to hearing your feedback.
+
+Joungwoo Baik:smiley:
