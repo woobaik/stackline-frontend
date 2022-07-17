@@ -12,10 +12,10 @@ export default function ProductPage() {
     <Spinner />
   ) : (
     <Row>
-      <Col span={4}>
+      <Col span={5}>
         <ProductLeftCard />
       </Col>
-      <Col flex={12}>
+      <Col span={19}>
         <ProductChart />
         <ProductTable />
       </Col>
