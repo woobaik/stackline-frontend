@@ -12,4 +12,11 @@ export interface IProduct {
   retailer: string;
   details: string[];
   tags: string[];
+  sales: {
+    weekEnding: string;
+    retailSales: number;
+    wholesaleSales: number;
+    unitsSold: number;
+    retailerMargin: number;
+  }[];
 }

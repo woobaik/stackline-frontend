@@ -1,15 +1,21 @@
 import { Col, Row } from 'antd';
+import { useAppSelector } from '../../store/store';
+import Spinner from '../Common/Spinner';
 import ProductChart from './ProductChart';
 import ProductLeftCard from './ProductLeftCard';
 import ProductTable from './ProductTable';
 
 export default function ProductPage() {
-  return (
+  const { loading } = useAppSelector((state) => state.product);
+
+  return loading ? (
+    <Spinner />
+  ) : (
     <Row>
-      <Col flex={2}>
+      <Col span={4}>
         <ProductLeftCard />
       </Col>
-      <Col flex={8}>
+      <Col flex={12}>
         <ProductChart />
         <ProductTable />
       </Col>

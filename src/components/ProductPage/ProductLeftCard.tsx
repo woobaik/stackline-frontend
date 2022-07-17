@@ -5,11 +5,10 @@ const { Meta } = Card;
 
 const ProductLeftCard = () => {
   const { product } = useAppSelector((state) => state.product);
-  console.log('p', product);
 
   return (
     <Card
-      style={{ width: 300, padding: 0, minHeight: '100vh' }}
+      style={{ padding: 0, minHeight: '100vh' }}
       cover={<img alt="example" src={product?.image} />}
     >
       <Meta

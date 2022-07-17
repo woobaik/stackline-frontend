@@ -4,12 +4,12 @@ import { IProduct } from '../../interfaces/Product';
 
 interface ProductState {
   loading: boolean;
-  product: IProduct | null;
+  product: IProduct | undefined;
 }
 
 const initialState: ProductState = {
   loading: true,
-  product: null,
+  product: undefined,
 };
 
 export const getProduct = createAsyncThunk<IProduct>(
