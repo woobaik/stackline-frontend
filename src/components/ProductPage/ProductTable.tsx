@@ -29,26 +29,43 @@ const columns: ColumnsType<DataType> = [
     title: 'RETAIL SALES',
     dataIndex: 'retailSales',
     sorter: (a, b) => a.retailSales - b.retailSales,
+    render(value) {
+      return (
+        <span>{`$ ${value
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`}</span>
+      );
+    },
   },
   {
     title: 'WHOLESALE SALES',
     dataIndex: 'wholesaleSales',
     sorter: (a, b) => a.wholesaleSales - b.wholesaleSales,
+    render(value) {
+      return (
+        <span>{`$ ${value
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`}</span>
+      );
+    },
   },
   {
     title: 'UNIT SOLD',
     dataIndex: 'wholesaleSales',
     sorter: (a, b) => a.wholesaleSales - b.wholesaleSales,
   },
-  {
-    title: 'UNITS SOLD',
-    dataIndex: 'unitsSold',
-    sorter: (a, b) => a.unitsSold - b.unitsSold,
-  },
+
   {
     title: 'RETAILER MARGIN',
     dataIndex: 'retailerMargin',
     sorter: (a, b) => a.retailerMargin - b.retailerMargin,
+    render(value) {
+      return (
+        <span>{`$ ${value
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`}</span>
+      );
+    },
   },
 ];
 
