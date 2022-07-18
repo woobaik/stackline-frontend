@@ -60,7 +60,9 @@ npm run start
 
 ## Thank You
 
-Thank you for taking your valuable time to review my code and considering me for joining the team at Stackline! I had a lot of fun building this project,
+Thank you for taking your valuable time to review my code and considering me for joining the team at Stackline! I had a lot of fun building this project.
+
+Got Favicon from stackline website :)
 
 I really look forward to hearing your feedback.
 
