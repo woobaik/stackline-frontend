@@ -13,6 +13,7 @@ const ProductLeftCard = () => {
       <Card
         style={{
           padding: 0,
+          marginBottom: '10px',
         }}
         cover={<img alt="example" src={product?.image} />}
       >
