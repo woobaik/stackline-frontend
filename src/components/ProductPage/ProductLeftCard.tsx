@@ -11,7 +11,9 @@ const ProductLeftCard = () => {
     <>
       <ReactHelmet title={`StackLine | ${product?.title}`} />
       <Card
-        style={{ padding: 0, height: '100%' }}
+        style={{
+          padding: 0,
+        }}
         cover={<img alt="example" src={product?.image} />}
       >
         <Meta

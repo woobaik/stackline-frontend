@@ -76,6 +76,7 @@ const ProductTable = () => {
     <Card style={{ marginLeft: '10px' }}>
       <Table
         columns={columns}
+        scroll={{ x: true }}
         dataSource={product?.sales}
         loading={loading}
         // The given data didn't have a key or Id, so I assumed weekEnding data is unique.

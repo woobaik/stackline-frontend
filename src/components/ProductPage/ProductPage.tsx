@@ -12,10 +12,10 @@ export default function ProductPage() {
     <Spinner />
   ) : (
     <Row style={{ marginTop: '15px' }}>
-      <Col span={5}>
+      <Col xs={24} xl={8} span={5}>
         <ProductLeftCard />
       </Col>
-      <Col span={19}>
+      <Col xs={24} xl={15} span={19}>
         <ProductChart />
         <br />
         <ProductTable />
